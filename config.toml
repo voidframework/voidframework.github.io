@@ -1,0 +1,28 @@
+baseURL = "https://voidframework.dev/"
+
+title = "Void Framework"
+theme = "void-framework"
+paginate = 12
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableMissingTranslationPlaceholders = true
+
+
+
+[params]
+  newsSections    = "news"
+  recentNewsMax   = 6
+
+[permalinks]
+  news  = "/news/:year/:month/:slug/"
+  pages = "/:slug/"
+  rpg   = "/:slug/"
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+#  [languages.fr]
+#    languageName = 'Français'
+#    weight = 2

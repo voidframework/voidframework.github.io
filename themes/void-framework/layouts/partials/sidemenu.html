@@ -1,0 +1,49 @@
+{{ $currentNode := . }}
+<div class="col d-sm-none d-md-block d-none d-sm-block" style="max-width: 260px;">
+    {{ range .Site.Menus.sidebar }}
+        {{ if .HasChildren }}
+            <p class="fw-bold mb-auto">
+                {{ .Name }}
+            </p>
+
+            {{ range .Children }}
+            <ul class="nav nav-pills small flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="{{ .URL | relLangURL }}" class="nav-link {{ if $currentNode.IsMenuCurrent "sidebar" . }}active{{ end }}" aria-current="page">
+                        {{ .Name }}
+                    </a>
+                </li>
+            </ul>
+            {{ end }}
+        {{ else }}
+            <ul class="nav nav-pills small flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="{{ .URL | relLangURL }}" class="nav-link" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#home"></use>
+                        </svg>
+                        {{ .Name }}
+                    </a>
+                </li>
+            </ul>
+        {{ end }}
+        <div class="mt-2"></div>
+    {{ end }}
+</div>
+
+<div class="d-block d-sm-block d-md-none">
+    <select class="form-select" aria-label="Default select example" name="sidebar-menu" id="sidebar-menu">
+    {{ range .Site.Menus.sidebar }}
+        {{ if .HasChildren }}
+            <optgroup label="{{ .Name }}">
+            {{ range .Children }}
+                <option value="{{ .URL | relLangURL }}" {{ if $currentNode.IsMenuCurrent "sidebar" . }}selected{{ end }}>{{ .Name }}</option>
+            {{ end }}
+            </optgroup>
+        {{ else }}
+            <option value="{{ .URL | relLangURL }}">{{ .Name }}</option>
+        {{ end }}
+    {{ end }}
+    </select>
+    <br/>
+</div>

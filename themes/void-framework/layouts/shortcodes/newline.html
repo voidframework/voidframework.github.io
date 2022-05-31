@@ -1,0 +1,5 @@
+{{ $number := .Get "number" | default 1 }}
+
+{{ range $num := (seq $number) }}
+<br/>
+{{ end }}

@@ -1,0 +1,4 @@
+{{ $type := .Get "type" | default "primary" }}
+{{ $name := .Get "name" | default "" }}
+
+<span class="badge bg-{{ $type }}">{{ $name }}</span>

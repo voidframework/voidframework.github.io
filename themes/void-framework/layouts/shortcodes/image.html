@@ -1,0 +1,8 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $class := .Get "class" | default "" }}
+{{ $style := .Get "style" | default "" }}
+
+<div class="img-container {{ $class }}" style="{{ $style }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" decoding="async">
+</div>

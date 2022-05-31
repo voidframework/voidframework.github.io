@@ -1,0 +1,12 @@
+name = "Void Framework"
+license = "MIT"
+licenselink = "https://github.com/voidframework/voidframework.github.io/master/LICENSE"
+description = ""
+homepage = "https://voidframework.dev"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Void Framework Team"
+  homepage = "https://github.com/voidframework"

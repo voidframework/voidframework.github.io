@@ -1,0 +1,44 @@
+name: "build"
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              name: Clone
+              with:
+                submodules: true
+                fetch-depth: 0
+
+            - name: Setup Hugo
+              run: |
+                  wget --quiet https://github.com/gohugoio/hugo/releases/download/v0.100.1/hugo_0.100.1_Linux-64bit.tar.gz
+                  tar -xzvf hugo_0.100.1_Linux-64bit.tar.gz
+                  rm -f hugo_0.100.1_Linux-64bit.tar.gz
+                  rm -f LICENSE
+                  rm -f README.md
+
+            - name: Build
+              run: |
+                  ./hugo --minify
+                  rm hugo
+
+            - name: Update "website"
+              run: |
+                  mv ./public ..
+                  git checkout website
+                  mv CNAME ../public/
+                  rm -rf *
+                  mv ../public/* .
+                  rm -f .hugo_build.lock
+
+            - name: Commit
+              run: |
+                  git config --global user.name 'Thibault Meyer'
+                  git config --global user.email 'thibaultmeyer@users.noreply.github.com'
+                  git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+                  git add .
+                  git commit -am "Automated website build"
+                  git push
