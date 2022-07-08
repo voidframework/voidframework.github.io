@@ -1,7 +1,7 @@
 ---
 title: "Cache"
 slug: "cache"
-weight: 20
+weight: 40
 draft: false
 menu:
   sidebar:

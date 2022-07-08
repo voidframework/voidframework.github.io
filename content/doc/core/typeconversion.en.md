@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "core"
     name: "Type conversion"
-    weight: 3
+    weight: 4
     identifier: "type-conversion"
 ---
 

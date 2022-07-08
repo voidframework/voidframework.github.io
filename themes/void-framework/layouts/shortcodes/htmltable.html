@@ -1,0 +1,8 @@
+{{ $htmlTable := .Inner }}
+{{ $table_class := .Get "table_class" }}
+
+<div class="table-responsive">
+    <table class="{{ $table_class }}">
+        {{ $htmlTable | safeHTML }}
+    </table>
+</div>

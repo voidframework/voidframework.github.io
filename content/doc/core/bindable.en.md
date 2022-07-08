@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "core"
     name: "Class scanning"
-    weight: 1
+    weight: 2
     identifier: "class-scanning"
 ---
 

@@ -12,8 +12,15 @@ menu:
 
 Void Framework provides the tools to use a cache system. Caching can be done in two different ways, via the use of annotations or programmatically via the use of the `CacheEngine`.
 
-If no `CacheEngine` implementation is specified, the cache will not be active.
- 
+{{< alert "info" >}}
+If no <code>CacheEngine</code> implementation was specified, the cache will not be active.
+{{< /alert >}}
+
+{{< alert "warning" >}}
+Note that caching a <code>Result</code> (Web) object can lead to errors during deserialization, especially if <code>Result</code> contains an InputStream.
+{{< /alert >}}
+
+
 
 {{< newline >}}
 #### Using Cache with annotations
@@ -45,6 +52,7 @@ The annotation accepts the following parameters:
 * `key` allows you to define the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
 
 * `timeToLive` allows you to provide a configuration key to retrieve the maximum time in milliseconds to wait before giving up and continuing to stop the application. If no key is specified, the default value `-1` (no expiration) will be used.
+ 
 
 
 {{< newline >}}
