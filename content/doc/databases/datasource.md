@@ -48,19 +48,20 @@ The following configuration keys can be used in the configuration file of your a
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.url` the JDBC format URL to be used to reach the database.
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.username` the username to be provided durint the authentication step.
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.password` the password to be provided durint the authentication step.
-* {{< badge type="success" name="C3P0 only" >}} {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.statementCacheNumDeferredCloseThreads` defines the number of threads to track when Connections are in use, and only destroy Statements when their parent Connections are not otherwise in use.
-* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.cachePrepStmts` enable or disable the prepared statements cache.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="C3P0 only" >}} `voidframework.datasource.default.statementCacheNumDeferredCloseThreads` defines the number of threads to track when Connections are in use, and only destroy Statements when their parent Connections are not otherwise in use.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.cachePrepStmts` enable or disable the prepared statements cache.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.prepStmtCacheSize` the number of prepared statements cache to keep in the cache.
-* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.prepStmtCacheSqlLimit` the size of the largest SQL query for which the parsing result will be keep in the cache.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.prepStmtCacheSqlLimit` the size of the largest SQL query for which the parsing result will be keep in the cache.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.autoCommit` enable or disable the auto commit behavior when the connection goes back into the pool.
-* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.connectionInitSql` the SQL statement that will be executed after every new connection.
-* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.connectionTestQuery` the SQL statement that will be executed to test if the connection is still valid.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.connectionInitSql` the SQL statement that will be executed after every new connection.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.connectionTestQuery` the SQL statement that will be executed to test if the connection is still valid.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.connectionTimeout` the milliseconds to wait before timing out during the connection.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.idleTimeout` the milliseconds to wait before closing an unused connection.
-* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.keepaliveTime` the milliseconds to wait before attempting to keep the connection alive.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.keepaliveTime` the milliseconds to wait before attempting to keep the connection alive.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.minimumIdle` the minimum number of alive connections in the pool.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.maximumPoolSize` the maximum number of connections allowed in the pool.
-* {{< badge type="success" name="C3P0 only" >}} {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.acquireIncrement` determines how many connections at a time C3P0 will try to acquire when the pool is exhausted.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="C3P0 only" >}} `voidframework.datasource.default.acquireIncrement` determines how many connections at a time C3P0 will try to acquire when the pool is exhausted.
+* {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.maxConnectionAge` the milliseconds to wait before closing a connection.
 
 {{< alert "info" >}}
 The third segment named "default" represents the name of the data source. Any name can be used as long as it does not contain spaces or special characters.
