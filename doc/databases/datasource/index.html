@@ -16,22 +16,28 @@ Note that you can only use one implementation at a time.</div><h5 id=c3p0>C3P0</
 <code>voidframework.datasource.default.driver</code> the driver to be used to communicate with the database.</li><li><span class="badge bg-primary">required</span>
 <code>voidframework.datasource.default.url</code> the JDBC format URL to be used to reach the database.</li><li><span class="badge bg-primary">required</span>
 <code>voidframework.datasource.default.username</code> the username to be provided durint the authentication step.</li><li><span class="badge bg-primary">required</span>
-<code>voidframework.datasource.default.password</code> the password to be provided durint the authentication step.</li><li><span class="badge bg-success">C3P0 only</span>
-<span class="badge bg-secondary">optional</span>
+<code>voidframework.datasource.default.password</code> the password to be provided durint the authentication step.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">C3P0 only</span>
 <code>voidframework.datasource.default.statementCacheNumDeferredCloseThreads</code> defines the number of threads to track when Connections are in use, and only destroy Statements when their parent Connections are not otherwise in use.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">HikariCP only</span>
 <code>voidframework.datasource.default.cachePrepStmts</code> enable or disable the prepared statements cache.</li><li><span class="badge bg-secondary">optional</span>
 <code>voidframework.datasource.default.prepStmtCacheSize</code> the number of prepared statements cache to keep in the cache.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">HikariCP only</span>
 <code>voidframework.datasource.default.prepStmtCacheSqlLimit</code> the size of the largest SQL query for which the parsing result will be keep in the cache.</li><li><span class="badge bg-secondary">optional</span>
 <code>voidframework.datasource.default.autoCommit</code> enable or disable the auto commit behavior when the connection goes back into the pool.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">HikariCP only</span>
 <code>voidframework.datasource.default.connectionInitSql</code> the SQL statement that will be executed after every new connection.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">HikariCP only</span>
 <code>voidframework.datasource.default.connectionTestQuery</code> the SQL statement that will be executed to test if the connection is still valid.</li><li><span class="badge bg-secondary">optional</span>
 <code>voidframework.datasource.default.connectionTimeout</code> the milliseconds to wait before timing out during the connection.</li><li><span class="badge bg-secondary">optional</span>
 <code>voidframework.datasource.default.idleTimeout</code> the milliseconds to wait before closing an unused connection.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">HikariCP only</span>
 <code>voidframework.datasource.default.keepaliveTime</code> the milliseconds to wait before attempting to keep the connection alive.</li><li><span class="badge bg-secondary">optional</span>
 <code>voidframework.datasource.default.minimumIdle</code> the minimum number of alive connections in the pool.</li><li><span class="badge bg-secondary">optional</span>
-<code>voidframework.datasource.default.maximumPoolSize</code> the maximum number of connections allowed in the pool.</li><li><span class="badge bg-success">C3P0 only</span>
-<span class="badge bg-secondary">optional</span>
-<code>voidframework.datasource.default.acquireIncrement</code> determines how many connections at a time C3P0 will try to acquire when the pool is exhausted.</li></ul><div class="alert alert-info" role=alert><i class="fas fa-fw fa-info-circle"></i>&nbsp;
+<code>voidframework.datasource.default.maximumPoolSize</code> the maximum number of connections allowed in the pool.</li><li><span class="badge bg-secondary">optional</span>
+<span class="badge bg-success">C3P0 only</span>
+<code>voidframework.datasource.default.acquireIncrement</code> determines how many connections at a time C3P0 will try to acquire when the pool is exhausted.</li><li><span class="badge bg-secondary">optional</span>
+<code>voidframework.datasource.default.maxConnectionAge</code> the milliseconds to wait before closing a connection.</li></ul><div class="alert alert-info" role=alert><i class="fas fa-fw fa-info-circle"></i>&nbsp;
 The third segment named "default" represents the name of the data source. Any name can be used as long as it does not contain spaces or special characters.</div><br><h4 id=usage>Usage</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Service</span>
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ExampleDataSourceService</span> <span style=color:#f92672>{</span>
 </span></span><span style=display:flex><span>
