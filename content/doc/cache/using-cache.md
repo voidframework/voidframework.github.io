@@ -17,7 +17,7 @@ If no <code>CacheEngine</code> implementation was specified, the cache will not 
 {{< /alert >}}
 
 {{< alert "warning" >}}
-Note that caching a <code>Result</code> (Web) object can lead to errors during deserialization, especially if <code>Result</code> contains an InputStream.
+Note that caching a <code>Result</code> (Web) object can lead to errors during deserialization, especially if <code>Result</code> contains an InputStream. Serialization and deserialization of cached objects is handled by the <code>Kryo</code> library.
 {{< /alert >}}
 
 
