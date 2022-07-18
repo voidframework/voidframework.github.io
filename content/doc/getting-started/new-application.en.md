@@ -39,12 +39,18 @@ In this example, we will also use the `web` feature, so the `voidframework-web` 
 
 Void Framework use a configuration file format is HOCON (Human-Optimized Config Object Notation). This format supports types such as integer, long, boolean, double, string, list and object. There are two ways to write comments: using `//` or `#`. Comments can be written in-line at the end of the line or in separate lines. For more information on Typesafe Config, visit the [Github project's page](https://github.com/lightbend/config).
 
-The first thing to do is to indicate the paths to scan to find the elements of your application that can be loaded. The default location for the configuration file is `resources/application.conf`.
+The first thing to do is to indicate the paths to scan to find the elements of your application that can be loaded. The default location for the configuration file is `resources/application.conf`. And to define a key to sign the Session (even if you plan to not use session).
 
 ```text
 voidframework {
     core {
         acceptedScanPaths += "controller"
+    }
+
+    web {
+        session {
+            signatureKey = "BUXpcQ6OAXMGR45sV9bjeq161raMoIrNiJw3z18leM4TRIBVUHsZsrTlK58fX2JD"
+        }
     }
 }
 ```
