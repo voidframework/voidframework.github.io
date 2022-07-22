@@ -4,7 +4,72 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.1.0
+{{< fontawesome name="calendar" >}}  *2022-07-22*
 
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td>Methods on <code>Reflection</code> util class: <code>getAnnotatedField(Object, Class<? extends Annotation>)</code> and <code>getAnnotatedField(Class, Class<? extends Annotation>)</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td>Configuration keys to define number of I/O and Worker threads (Web)</td>
+</tr>
+<tr>
+  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td>Redis (base + cache + healthcheck)</td>
+</tr>
+<tr>
+  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td>CSRF token</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="primary" name="Improved" >}} </td>
+  <td>No longer necessary for HealthChecker to be Singleton</code></td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="primary" name="Improved" >}} </td>
+  <td>Add cache abstraction helper</code></td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="primary" name="Improved" >}} </td>
+  <td>Session signature key configuration is now required</code></td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="primary" name="Improved" >}} </td>
+  <td>Rename <code>ApplicationLauncher</code> to <code>VoidApplication</code>
+</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="primary" name="Improved" >}} </td>
+  <td>Updated version of all dependencies</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Cookie revocation not working</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="danger" name="Fixed" >}}</td>
+  <td>C3P0/HikariCP settings</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Issue on routes sorting when regex and capture regex are used</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Assets not found when devMode=false</td>
+</tr>
+<tr>
+  <td class="text-end">{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Hibernate : Models not found when application is compiled</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.0.1
 {{< fontawesome name="calendar" >}}  *2022-07-08*
 

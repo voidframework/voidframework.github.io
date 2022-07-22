@@ -24,12 +24,12 @@ In this example, we will also use the `web` feature, so the `voidframework-web` 
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-core</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 </dependency>
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-web</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
@@ -93,8 +93,8 @@ public final class MyFirstController {
 To start the application, you have to instantiate `ApplicationLauncher` and then call the `launch` method.
 
 ```java
-final ApplicationLauncher applicationLauncher = new ApplicationLauncher();
-applicationLauncher.launch();
+final VoidApplication app = new VoidApplication();
+app.launch();
 ```
 
 
