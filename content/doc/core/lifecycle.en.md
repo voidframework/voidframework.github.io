@@ -34,7 +34,7 @@ Indicates that this method should be called when the application is stopped.
 
 The annotation accepts the following parameters:
 
-* `priority` allows you to define when the method will be called in relation to the others. The lower the priority, the higher the priority of the method. The default value is `1000`.
+* `priority` defines when the method will be called in relation to the others. The lower the priority, the higher the priority of the method. The default value is `1000`.
 * `gracefulStopTimeoutConfigKey` allows you to provide a configuration key to retrieve the maximum time in milliseconds to wait before giving up and continuing to stop the application. If no key is specified, the default value `0` will be used.
 
 

@@ -24,12 +24,12 @@ In this example, we will also use the `web` feature, so the `voidframework-web` 
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-core</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-web</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
@@ -37,7 +37,7 @@ In this example, we will also use the `web` feature, so the `voidframework-web` 
 {{< newline >}}
 #### Configuration
 
-Void Framework use a configuration file format is HOCON (Human-Optimized Config Object Notation). This format supports types such as integer, long, boolean, double, string, list and object. There are two ways to write comments: using `//` or `#`. Comments can be written in-line at the end of the line or in separate lines. For more information on Typesafe Config, visit the [Github project's page](https://github.com/lightbend/config).
+Void Framework use a configuration file format is HOCON (Human-Optimized Config Object Notation). This format supports types such as integer, long, boolean, double, string, list and object. It is also possible to include other files by using `include`. There are two ways to write comments: using `//` or `#`. Comments can be written in-line at the end of the line or in separate lines. For more information on Typesafe Config, visit the [Github project's page](https://github.com/lightbend/config).
 
 The first thing to do is to indicate the paths to scan to find the elements of your application that can be loaded. The default location for the configuration file is `resources/application.conf`. And to define a key to sign the Session (even if you plan to not use session).
 
@@ -80,7 +80,6 @@ public final class MyFirstController {
 
     @RequestRoute(method = HttpMethod.GET, route = "/")
     public Result sayHello() {
-
         return Result.ok("Hello World!");
     }
 }
