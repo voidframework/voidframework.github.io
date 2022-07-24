@@ -1,7 +1,7 @@
 ---
 title: "Internationalization"
 slug: "i18n"
-weight: 20
+weight: 50
 draft: false
 menu:
   sidebar:

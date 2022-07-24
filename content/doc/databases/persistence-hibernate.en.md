@@ -23,7 +23,7 @@ This module adds support for the `Transactional` annotation as well as setting u
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-persistence-hibernate</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
