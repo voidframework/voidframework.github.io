@@ -20,6 +20,9 @@ jobs:
                   rm -f LICENSE
                   rm -f README.md
 
+            - name: Fallback
+              run: ./.github/trans-copy
+
             - name: Build
               run: |
                   ./hugo --minify
