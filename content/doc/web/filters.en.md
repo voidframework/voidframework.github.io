@@ -28,7 +28,7 @@ The use of filters is done through the use of the `@WithFiter` annotation. It is
 @WebController
 public class Controller {
 
-    @FilterWith({ThirdFiter.java})
+    @FilterWith({ThirdFilter.java})
     @RequestRouting
     public Result showHomePage() {
         return Result.of("Hello World!");
