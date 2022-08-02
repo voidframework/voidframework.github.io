@@ -4,16 +4,29 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.1.2
+{{< fontawesome name="calendar" >}}  *2022-08-02*
+
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>EntityManagerFactory don't find models on multiple-jars project</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.1.1
 {{< fontawesome name="calendar" >}}  *2022-07-24*
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=30px>{{< badge type="primary" name="Improved" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Change CSRF signature algorithm to HMACSHA256</td>
 </tr>
 <tr>
-  <td class="text-end" width=30px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Error 500 CSRF when POST request render template</td>
 </tr>
 {{< /htmltable >}}
@@ -26,19 +39,19 @@ slug: "releasenotes"
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
   <td>Methods on <code>Reflection</code> util class: <code>getAnnotatedField(Object, Class<? extends Annotation>)</code> and <code>getAnnotatedField(Class, Class<? extends Annotation>)</code></td>
 </tr>
 <tr>
-  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
   <td>Configuration keys to define number of I/O and Worker threads (Web)</td>
 </tr>
 <tr>
-  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
   <td>Redis (base + cache + healthcheck)</td>
 </tr>
 <tr>
-  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
   <td>CSRF token</td>
 </tr>
 <tr>
@@ -92,7 +105,7 @@ slug: "releasenotes"
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=30px>{{< badge type="success" name="New" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
   <td>Ability to retrieve XML body content as Java object</td>
 </tr>
 <tr>

@@ -23,7 +23,7 @@ This module adds support for the `Transactional` annotation as well as setting u
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-persistence-hibernate</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
 </dependency>
 ```
 
@@ -111,3 +111,11 @@ public class NewsRepositoryImpl implements NewsRepository {
         return conversion.convert(newsModelList, NewsModel.class, News.class);
     }
 ```
+
+
+
+{{< newline >}}
+#### Speed-up PersistenceEntityFactory initialization time
+By default, Void Framework tells the `PersistenceEntityFactory` to scan all JARs of the application's and dependencies. This scan is necessary to detect models. If you want to greatly improve this initialization time, it is advisable to set the `voidframework.persistence.modelsJarUrlPattern` configuration key to indicate which JARs to keep. The could be `null`, a regular expression, or `auto` (default value).
+
+If the configuration is set to `null`, only the current JAR / classpath (when started in IDE) will be used. `auto` is like using the regular expression `(.*)`.

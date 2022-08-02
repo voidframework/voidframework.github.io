@@ -19,7 +19,7 @@ This implementation of the cache engine is convenient during the development pha
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-cache</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
 </dependency>
 ```
 

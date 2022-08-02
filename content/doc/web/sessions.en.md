@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "Session"
-    weight: 3
+    weight: 2
     identifier: "session"
 ---
 
