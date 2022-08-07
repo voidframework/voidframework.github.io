@@ -70,7 +70,7 @@ public class Controller {
 
     @RequestRouting
     public Result sessionExample(final Context ctx) {
-        final String userId = ctx.getSession().put("USER_ID", "e90b88d4-3c15-4397-b774-d63a0ad89c74");
+        final String userId = ctx.getSession().put("USER_ID", "e90b88d4-3c15");
         return Result.of(userId);
     }
 }

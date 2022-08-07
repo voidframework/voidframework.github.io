@@ -19,3 +19,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 
 - `ApplicationLauncher` à été renommé en `VoidApplication`
 - La clé de configuration `voidframework.web.session.signatureKey` est maintenant obligatoire
+
+
+
+{{< newline >}}
+#### 1.2.0
+
+- Le filtre CSRF à été déplacé dans la package `dev.voidframework.web.filter.csrf`, si vous utilisez ce filtre dans votr application, il faudra modifier la clef de configuration `voidframework.web.globalFilters`

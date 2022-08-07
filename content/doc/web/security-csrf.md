@@ -45,7 +45,7 @@ The activation of the CSRF filter is done via the configuration key `voidframewo
 voidframework {
 
     web {
-        globalFilters += "dev.voidframework.web.csrf.CSRFFilter"
+        globalFilters += "dev.voidframework.web.http.filter.csrf.CSRFFilter"
     }
 }
 ```

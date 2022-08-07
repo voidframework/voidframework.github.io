@@ -46,7 +46,7 @@ In case the filter have to be enabled globally (it will be used for all requests
 ```text
 voidframework {
     web {
-        globalFilters += "dev.voidframework.web.csrf.CSRFFilter"
+        globalFilters += "dev.voidframework.web.http.filter.csrf.CSRFFilter"
     }
 }
 ```

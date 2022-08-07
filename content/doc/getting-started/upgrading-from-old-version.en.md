@@ -19,3 +19,12 @@ Sometimes important changes will be introduced that will break the backwards com
 
 - `ApplicationLauncher` has been renamed to `VoidApplication`
 - The setting key `voidframework.web.session.signatureKey` is now required
+
+
+
+{{< newline >}}
+#### 1.2.0
+
+- The CSRF filter has been moved to the `dev.voidframework.web.http.filter.csrf` package, if you use this filter in your application, you will need to modify the configuration key `voidframework.web.globalFilters`
+- The Security Headers filter has been moved to the `dev.voidframework.web.http.filter.security` package, if you use this filter in your application, you will need to modify the configuration key `voidframework.web.globalFilters`
+- Annotations `NoCSRF`, `RequestBody`, `RequestPath`, `RequestRoute`, `RequestVariable` and `WithFilter` has been moved to the package `dev.voidframework.web.http.annotation`
