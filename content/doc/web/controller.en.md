@@ -90,3 +90,28 @@ The annotation accepts the following parameter:
 #### @RequestBody
 
 This annotation allows you to retrieve the contents of the request (i.e. from a POST query) as a Java object. If something goes wrong, the extracted value will be `null`.
+
+
+
+{{< newline >}}
+#### Parameter types
+
+It is sure that you will have to retrieve the parameters with their respective type (e.g. int, boolean, ...). For this, Void Framework uses the converter mechanism to allow conversion from a `String`. By default, the following types are handled:
+
+* Boolean
+* Byte
+* Character
+* Double
+* Float
+* Integer
+* Locale
+* Long
+* Short
+* String
+* UUID
+
+
+{{< newline >}}
+#### Handle custom types
+
+To handle a new type, you simply have to implement a new converter. For more information, read the [Type conversion]({{< relref "doc/core/typeconversion" >}}) chapter.
