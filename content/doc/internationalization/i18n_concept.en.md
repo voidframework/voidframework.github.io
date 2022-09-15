@@ -18,7 +18,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-i18n</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 

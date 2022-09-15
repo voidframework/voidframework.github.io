@@ -4,6 +4,27 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.2.1
+{{< fontawesome name="calendar" >}}  *2022-09-15*
+
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fix" >}}</td>
+  <td>The "Modules loaded" log is displayed too early</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fix" >}}</td>
+  <td>Remove unused "GlobalFilterDefinition" interface</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Add converter String to Locale (Web). Used to extract Locale from incoming request (route path or query parameter)</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.2.0
 {{< fontawesome name="calendar" >}}  *2022-09-05*
 

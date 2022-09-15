@@ -19,7 +19,7 @@ To generate HTML document with `FreeMarker`, you have to use the module `voidfra
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-template-freemarker</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
