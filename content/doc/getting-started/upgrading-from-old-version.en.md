@@ -28,3 +28,18 @@ Sometimes important changes will be introduced that will break the backwards com
 - The CSRF filter has been moved to the `dev.voidframework.web.http.filter.csrf` package, if you use this filter in your application, you will need to modify the configuration key `voidframework.web.globalFilters`
 - The Security Headers filter has been moved to the `dev.voidframework.web.http.filter.security` package, if you use this filter in your application, you will need to modify the configuration key `voidframework.web.globalFilters`
 - Annotations `NoCSRF`, `RequestBody`, `RequestPath`, `RequestRoute`, `RequestVariable` and `WithFilter` has been moved to the package `dev.voidframework.web.http.annotation`
+
+
+
+{{< newline >}}
+#### 1.3.0
+
+- Annotations `@CacheRemove` and `@CacheResult` are now in the package `dev.voidframework.cache.annotation`
+- Redis parameter `connectionTimeout` is now a duration, a time unit must be provided
+- `addInList` method of the `voidframework-redis` module now adds items to the end of the list
+- Classes from `dev.voidframework.core.helper` has been moved to `dev.voidframework.core.utils` and the suffix `Utils` has been added (ie: `IO` is now named `IOUtils`)
+- Method `Result::redirectPermanentlyTo` has been renamed to `Result::redirectMovedPermanently`
+- Method `Result::redirectTemporaryTo` has been renamed to `Result::redirectFound`
+- Class `HttpMimeType` has been renamed to `HttpMimeTypes`
+- Method `HttpRequestBodyContent::asRaw` now return an `InputStream`
+- Class `ValidationError` is now a record. All methods are now named without any prefix (ie: `getMessage()` is now named `message()`)

@@ -18,18 +18,18 @@ To create a new application with Void Framework, simply create a new Maven proje
 
 The very first dependency to include in your `pom.xml` is `voidframework-core`, without it you will not be able to start the application. The dependencies to be added will depend on the features you wish to use on your application, so do not hesitate to consult the different chapters of the documentation.
 
-In this example, we will also use the `web` feature, so the `voidframework-web` dependency will also be added
+In this example, we will also use the `web` feature, so the `voidframework-web` dependency will also be added.
 
 ```xml
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-core</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-web</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 

@@ -1,11 +1,10 @@
 ---
 title: "Hibernate"
 slug: "persistence-hibernate"
-weight: 2
 draft: false
 menu:
   sidebar:
-    parent: "databases"
+    parent: "relational-databases"
     name: "Hibernate ORM"
     weight: 2
     identifier: "persistence-hibernate"
@@ -17,15 +16,20 @@ Hibernate is an Object Relational Mapper (ORM). It provides a framework for mapp
 Void Framework uses Hibernate 6 (or higher), which that means Java persistence is no longer defined by the Java Persistence API under Java EE, but rather by to the Jakarta Persistence 3.0 specification under Jakarta EE. This means the <code>javax.persistence</code> package is no longer available and is replaced by <code>jakarta.persistence</code> package.
 {{< /alert >}}
 
+
+{{< newline >}}
+#### Installation
+
 This module adds support for the `Transactional` annotation as well as setting up an `EntityManager` provider pre-configured with all the data sources configured via the `datasource` module. There is no special configuration to apply, just add the `voidframework-persistence-hibernate` module to the `pom.xml` file of your project.
 
 ```xml
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-persistence-hibernate</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
+
 
 
 {{< newline >}}
@@ -39,6 +43,19 @@ Note that <code>Transactional</code> annotation does not allow the specification
 {{< /alert >}}
 
 
+
+{{< newline >}}
+#### Identifier generator
+
+{{< table table_class="table table-striped" >}}
+| Identifier type | Assignable to        | Identifier generator annotation |
+|-----------------|----------------------|---------------------------------|
+| CUID            | CUID, String, byte[] | `@CuidGenerator`                |
+| UUID            | UUID, String, byte[] | `@UuidGenerator`                |
+{{< /table >}}
+
+
+
 {{< newline >}}
 #### Exemple
 ```java
@@ -46,6 +63,11 @@ Note that <code>Transactional</code> annotation does not allow the specification
 @DynamicUpdate
 @Table(name = "NEWS")
 public class NewsModel extends Model {
+
+    @Id
+    @UuidGenerator
+    @Column(name = "ID", updatable = false, nullable = false)
+    private UUID id;
 
     @Column(name = "TITLE", nullable = false)
     private String title;

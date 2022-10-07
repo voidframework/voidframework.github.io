@@ -1,11 +1,11 @@
 ---
 title: "Web"
 slug: "web"
-weight: 80
+weight: 90
 draft: false
 menu:
   sidebar:
     name: "Web"
-    weight: 80
+    weight: 90
     identifier: "web"
 ---

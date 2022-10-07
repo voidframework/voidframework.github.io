@@ -4,16 +4,120 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.3.0
+{{< fontawesome name="calendar" >}}  *2022-11-07*
+
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade Jackson Databind version to 2.14.0 (<a href="https://github.com/advisories/GHSA-jjjh-jjxp-wpff">CVE-2022-42003</a>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>WebSocket support</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Can configure temporary files location (<code>voidframework.web.server.tempFileLocation</code>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Mockito annotation support</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>CUID: a Collision-resistant Unique ID</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>HttpHeaderNames</code> class</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Virtual File Storage</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>No HTTP request timeout (<code>voidframework.web.server.idleTimeout</code>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>The abbreviation of "december" is now correct (scheduler)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>"Day of Week" and "Month" can't be zero (Scheduler)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Redis methods <code>addInList</code>, <code>getFromList</code> and <code>decrement</code> now working correctly</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Force close all InputStream of uploaded files</td>
+</tr><tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Can use template-freemarker without web</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Configuration Key/Value from CLI JVM properties (<code>-D</code> flag)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Annotation <code>@RequestVariable</code> can now retrieve array</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Move cache annotations to subpackage <code>annotation</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Use wrap/unwrap on Memory cache engine</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Redis parameter <code>connectionTimeout</code> is now a duration</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Rename all utility classes</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Add new redirection methods on <code>Result</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td><code>HttpRequestBodyContent::asRaw</code> is now an <code>InputStream</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td><code>Redis::addInList</code> now return the current list size</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td><code>ValidationError</code> is now a record</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.2.1
 {{< fontawesome name="calendar" >}}  *2022-09-15*
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fix" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>The "Modules loaded" log is displayed too early</td>
 </tr>
 <tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fix" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Remove unused "GlobalFilterDefinition" interface</td>
 </tr>
 <tr>
@@ -30,7 +134,7 @@ slug: "releasenotes"
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Security" >}}</td>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
   <td>Upgrade Undertow version to 2.2.19 (<a href="https://github.com/advisories/GHSA-95rf-557x-44g5">CVE-2022-2053</a>)</td>
 </tr>
 <tr>
@@ -104,12 +208,12 @@ slug: "releasenotes"
 
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
-  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
-  <td>Change CSRF signature algorithm to HMACSHA256</td>
-</tr>
-<tr>
   <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Error 500 CSRF when POST request render template</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Change CSRF signature algorithm to HMACSHA256</td>
 </tr>
 {{< /htmltable >}}
 
@@ -137,6 +241,26 @@ slug: "releasenotes"
   <td>CSRF token</td>
 </tr>
 <tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Cookie revocation not working</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>C3P0/HikariCP settings</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Issue on routes sorting when regex and capture regex are used</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Assets not found when devMode=false</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Hibernate : Models not found when application is compiled</td>
+</tr>
+<tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>No longer necessary for HealthChecker to be Singleton</code></td>
 </tr>
@@ -157,26 +281,6 @@ slug: "releasenotes"
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Updated version of all dependencies</td>
 </tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Cookie revocation not working</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>C3P0/HikariCP settings</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Issue on routes sorting when regex and capture regex are used</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Assets not found when devMode=false</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Hibernate : Models not found when application is compiled</td>
-</tr>
 {{< /htmltable >}}
 
 
@@ -191,10 +295,6 @@ slug: "releasenotes"
   <td>Ability to retrieve XML body content as Java object</td>
 </tr>
 <tr>
-  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
-  <td>Cache management : rename the annotation <code>Cache</code> to <code>CacheResult</code> and add <code>CacheRemove</code></td>
-</tr>
-<tr>
   <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Removed I18N reference from Hibernate module</td>
 </tr>
@@ -205,6 +305,10 @@ slug: "releasenotes"
 <tr>
   <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Routes are randomly sorted</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Cache management : rename the annotation <code>Cache</code> to <code>CacheResult</code> and add <code>CacheRemove</code></td>
 </tr>
 {{< /htmltable >}}
 

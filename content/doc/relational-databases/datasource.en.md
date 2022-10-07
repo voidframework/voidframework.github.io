@@ -1,11 +1,10 @@
 ---
 title: "Data source"
 slug: "datasource"
-weight: 1
 draft: false
 menu:
   sidebar:
-    parent: "databases"
+    parent: "relational-databases"
     name: "Data source"
     weight: 1
     identifier: "datasource"
@@ -14,8 +13,9 @@ menu:
 Your application needs to connect to one or more databases? Void Framework is capable of handling multiple data sources at the same time through the use of `DataSourceManager`. It will provide all the necessary methods to obtain a connection from the desired data source. Each data source can be configured independently. Your application can, for example, be connected to PostgreSQL and Oracle at the same time.
 
 
+
 {{< newline >}}
-#### Configuration
+#### Installation
 
 Void Framework offers different implementations, depending on the implementation chosen, the configuration keys may change. Here you will find all the information to fully configure each implementation.
 
@@ -28,7 +28,7 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-c3p0</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
@@ -38,9 +38,12 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-hikaricp</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
+
+{{< newline >}}
+#### Configuration
 
 The following configuration keys can be used in the configuration file of your application:
 

@@ -1,11 +1,11 @@
 ---
 title: "Template"
 slug: "template"
-weight: 70
+weight: 80
 draft: false
 menu:
   sidebar:
     name: "Template"
-    weight: 70
+    weight: 80
     identifier: "template"
 ---

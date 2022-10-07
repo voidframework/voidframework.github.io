@@ -24,7 +24,7 @@ public final class ExampleConversionService {
     private final Conversion conversion;
 
     @Inject
-    public DummyService(final Conversion conversion) {
+    public ExampleConversionService(final Conversion conversion) {
         this.conversion = conversion;
     }
 

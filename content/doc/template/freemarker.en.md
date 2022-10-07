@@ -19,9 +19,25 @@ To generate HTML document with `FreeMarker`, you have to use the module `voidfra
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-template-freemarker</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
+
+
+{{< newline >}}
+#### Templates location
+
+By default, templates should be placed in the `resources/views` directory.
+
+
+
+{{< newline >}}
+#### Configuration
+
+The following configuration keys can be used in the configuration file of your application:
+
+* `voidframework.template.basePackagePath` the location of the templates. The default value is `"/views/"`.
+
 
 
 {{< newline >}}
@@ -52,11 +68,3 @@ By default, modules `web` and `template-freemarker` provide a set of methods and
 FreeMarker provides a lot of other built-in methods & variables. Read more about FreeMarker
 on the <a href="https://freemarker.apache.org/docs/ref_builtins.html">official website</a>.
 {{< /alert >}}
-
-
-
-
-{{< newline >}}
-#### Templates location
-
-Templates should be placed in the `resources/views` directory.

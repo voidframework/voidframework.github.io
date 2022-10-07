@@ -7,7 +7,7 @@ menu:
     parent: "core"
     name: "Configuration"
     weight: 5
-    identifier: "configuration"
+    identifier: "core-configuration"
 ---
 
 Void Framework use a configuration file format is HOCON (Human-Optimized Config Object Notation). This format supports types such as integer, long, boolean, double, string, list and object. It is also possible to include other files by using `include`. There are two ways to write comments: using `//` or `#`. Comments can be written in-line at the end of the line or in separate lines. For more information on Typesafe Config, visit the [Github project's page](https://github.com/lightbend/config).
@@ -21,6 +21,14 @@ These are the default filenames that the Config library looks for on the classpa
 - `reference.conf`
 
 
+
+{{< newline >}}
+#### JVM properties
+
+It is sometimes useful to be able to override or simply set specific configuration values from the parameters provided at JVM startup. To do this, all properties defined via `-D` flag are accessible from the `Configuration` object.
+
+
+
 {{< newline >}}
 #### Use another configuration file
 
@@ -29,6 +37,34 @@ If you need to use a custom/external configuration file, especially when your ap
 ```bash
 -Dconfig.file=/path/to/your/application.conf
 ```
+
+
+
+{{< newline >}}
+#### Retrieve configuration value from Java
+
+```java
+@Service
+public class MyService {
+
+    private final Config configuration;
+
+    @Inject
+    public MyService(final Config configuration) {
+        this.configuration = configuration;
+    }
+
+    public void test() {
+        final boolean runInDevMode = configuration.getBoolean("voidframework.core.runInDevMode");
+        if (runInDevMode) {
+            // Do something
+        } else {
+            // Do something else
+        }
+    }
+}
+```
+
 
 
 {{< newline >}}
@@ -48,7 +84,7 @@ If more than one provider is declared. They will be used in order of declaration
 <dependency>
   <groupId>dev.voidframework</groupId>
   <artifactId>voidframework-remoteconf-etcd</artifactId>
-  <version>1.2.1</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 
@@ -92,7 +128,7 @@ voidframework {
 <dependency>
   <groupId>dev.voidframework</groupId>
   <artifactId>voidframework-remoteconf-http</artifactId>
-  <version>1.2.1</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 

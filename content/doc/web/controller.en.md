@@ -80,7 +80,7 @@ The annotation accepts the following parameter:
 
 #### @RequestVariable
 
-This annotation allows you to extract query string value from the URI.
+This annotation allows you to extract query string value (simple or array) from the URI.
 
 The annotation accepts the following parameter:
 
@@ -101,6 +101,7 @@ It is sure that you will have to retrieve the parameters with their respective t
 * Boolean
 * Byte
 * Character
+* CUID
 * Double
 * Float
 * Integer
@@ -115,3 +116,25 @@ It is sure that you will have to retrieve the parameters with their respective t
 #### Handle custom types
 
 To handle a new type, you simply have to implement a new converter. For more information, read the [Type conversion]({{< relref "doc/core/typeconversion" >}}) chapter.
+
+
+
+{{< newline >}}
+**Example**
+
+```java
+@Singleton
+@WebController
+public class ExampleController {
+
+    @RequestRoute(route = "/")
+    public Result retrieveArrayFromQueryString(@RequestVariable("year") final int[] yearArray) {
+        return Result.ok(Yaml.toString(yearArray));
+    }
+
+     @RequestRoute(method = HttpMethod.POST, route = "/")
+    public Result retrieveListFromBody(@RequestBody("year") final List<Integer> yearList) {
+        return Result.ok(Yaml.toString(yearList));
+    }
+}
+```

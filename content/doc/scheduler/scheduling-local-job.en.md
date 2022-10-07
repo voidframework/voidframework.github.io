@@ -19,7 +19,7 @@ If your application have to schedule a job in a scheduled way (ie: every 5 secon
 
 To define a job, simply use the `@Scheduled` annotation on one or more methods of a bindable class. As a reminder, a class is said to be bindable when it is annotated with, at least, the `@Bindable` annotation.
 
-The  `@Scheduled` annotation accepts the following parameters:
+The `@Scheduled` annotation accepts the following parameters:
 
 * `fixedDelay` defines the time in milliseconds between the end of the last execution and the next execution. The default value is `0` (disabled).
 
