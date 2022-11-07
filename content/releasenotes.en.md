@@ -4,6 +4,18 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.3.1
+{{< fontawesome name="calendar" >}}  *2022-11-07*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>NullPointerException if header Accept-Language not provided</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.3.0
 {{< fontawesome name="calendar" >}}  *2022-11-07*
 
