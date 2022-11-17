@@ -23,7 +23,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-redis</artifactId>
-    <version>1.3.1</version>
+    <version>1.3.2</version>
 </dependency>
 ```
 
@@ -55,7 +55,7 @@ If you wan to monitoring Redis health, you can enable the healthcheck module by 
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-redis-healthcheck</artifactId>
-    <version>1.3.1</version>
+    <version>1.3.2</version>
 </dependency>
 ```
 
