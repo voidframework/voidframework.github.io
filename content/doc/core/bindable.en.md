@@ -13,9 +13,20 @@ menu:
 The core of the Void Framework is based on the scanning of different paths to discover elements to load.
 3 types of elements are recognised during the scan:
 
-* Bindable classes (see below)
-* classes implementing the `TypeConverter` interface
-* classes which extend `AbstractModule` (Guice)
+* Classes extending `AbstractModule` (Guice)
+* Classes annotated with `Bindable` annotation
+* Classes implementing defined interface
+
+
+
+{{< newline >}}
+#### Guice module
+
+Guice modules that extend the abstract class `AbstractModule` are automatically detected and loaded when the application starts.
+
+{{< alert "info" >}}
+If you want to manage a priority on Guices modules, you can implement the <code>OrderedModule</code> interface.
+{{< /alert >}}
 
 
 {{< newline >}}
@@ -33,6 +44,13 @@ Other class-level specialized annotations can also be considered as identifying 
 | `@Repository` | Indicates that an annotated class is a "Repository" |
 | `@Service`    | Indicates that an annotated class is a "Service"    |
 {{< /table >}}
+
+
+
+{{< newline >}}
+#### Defined interface
+
+The configuration key `voidframework.core.bindExtraInterfaces` is used to define a set of interfaces for which to bind the found implementations. For example, converters are automatically detected in this way via the `TypeConverter` interface.
 
 
 {{< newline >}}

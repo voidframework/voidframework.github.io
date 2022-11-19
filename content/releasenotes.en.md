@@ -4,6 +4,42 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.4.0
+{{< fontawesome name="calendar" >}}  *2022-12-05*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Guice module prioritisation</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>jOOQ module</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Web context path is now customizable (<code>voidframework.web.contextPath</code>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Deserialization: Unknown enum value to null</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Scheduler "run once" mode</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Static files/webjars controller: add route name (<code>static_file</code> and <code>static_webjar</code>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.3.2
 {{< fontawesome name="calendar" >}}  *2022-11-14*
 {{< htmltable table_class="table table-borderless" >}}

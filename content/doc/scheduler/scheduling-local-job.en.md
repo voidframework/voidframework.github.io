@@ -80,5 +80,10 @@ public final class Ping {
     public void doPingEveryMondayAtMidnightEuropeParis() {
         LOGGER.info("PING!!");
     }
+
+    @Scheduled(initialDelay = 1000)
+    public void doPingOnceAfter1Second() {
+        LOGGER.info("PING!!");
+    }
 }
 ```

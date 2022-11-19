@@ -43,3 +43,10 @@ Sometimes important changes will be introduced that will break the backwards com
 - Class `HttpMimeType` has been renamed to `HttpMimeTypes`
 - Method `HttpRequestBodyContent::asRaw` now return an `InputStream`
 - Class `ValidationError` is now a record. All methods are now named without any prefix (ie: `getMessage()` is now named `message()`)
+
+
+
+{{< newline >}}
+#### 1.4.0
+
+- Method `Router::addRoute` has changed. The `routeUrl` parameter is now of type `RouteURL`. You can use `RouteURL::of` to migrate to the new format

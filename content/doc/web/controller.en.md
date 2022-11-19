@@ -37,6 +37,13 @@ public class AccountController {
 
 
 {{< newline >}}
+#### What is a route?
+
+A route consists of three elements: a context path, a prefix and a route itself. The first is configured in the `application.conf` file via the use of the `voidframework.web.contextPath` key (default value is `/`) while the other two are endpoint dependent.
+
+
+
+{{< newline >}}
 #### Defining a route
 
 A route is defined by two components, firstly `@WebController` defines the prefix that will be applied to all methods of the controller and by the `@RequestRoute` annotation providing various options. The latter tells the Void Framework that the method is an entry point.

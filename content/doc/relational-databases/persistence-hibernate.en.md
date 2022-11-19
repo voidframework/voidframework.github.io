@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "relational-databases"
     name: "Hibernate ORM"
-    weight: 2
+    weight: 3
     identifier: "persistence-hibernate"
 ---
 
@@ -26,21 +26,23 @@ This module adds support for the `Transactional` annotation as well as setting u
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-persistence-hibernate</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
 
 
 {{< newline >}}
-#### @Transactional
-The transactional annotation itself defines the scope of a single database transaction. Void Framework fully implements `Transactional` annotation, so all availables options can be used without any restrictions.
+#### Working with transaction manually
 
-If annotation is used both at class and method level, the second one will take ascendance.
+```java
+final EntityManager entityManager = this.entityManagerProvider.get();
+final EntityTransaction transaction = entityManager.getTransaction();
 
-{{< alert "info" >}}
-Note that <code>Transactional</code> annotation does not allow the specification of the data source to be used. The current implementation will only work for data source <code>default</code>.
-{{< /alert >}}
+transaction.begin();
+/* insert/update/delete operations */
+transaction.commit();
+```
 
 
 

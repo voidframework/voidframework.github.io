@@ -51,6 +51,14 @@ Templates should be placed in the `resources/views` directory.
 
 
 
+{{< newline >}}
+#### Static files
+
+If you need to include static files in your HTML page (e.g. css, javascript, image, ...), you can use the `urlfor` method with the first parameter `static_file` or `static_webjar` and the second parameter the path to the file.
+
+
+
+
 
 {{< newline >}}
 #### Example
@@ -75,6 +83,7 @@ public class HomeController {
 <html lang="${lang!}">
     <body>
       <h1>${greating}</h1>
+      <img src="${urlfor('static_file', 'img/logo.png')}" alt="image"/>
     </body>
 </html>
 ```

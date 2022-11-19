@@ -41,3 +41,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 - La classe `HttpMimeType` a été renommée en `HttpMimeTypes`
 - La méthode `HttpRequestBodyContent::asRaw` return désormait un `InputStream`
 - La classe `ValidationError` est maintenant un record. Toutes les méthodes sont maintenant nommée sans aucun prefix (ex : `getMessage()` se nomme maintenant `message()`)
+
+
+
+{{< newline >}}
+#### 1.4.0
+
+- La définition de la méthode `Router::addRoute` à changée. Le paramètre `routeUrl` est maintenant du type `RouteURL`. Vous pouvez utiliser la méthode `RouteURL::of` pour migrer vers le nouveau format 
