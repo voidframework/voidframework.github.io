@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "core"
     name: "Life cycle"
-    weight: 3
+    weight: 5
     identifier: "life-cycle"
 ---
 

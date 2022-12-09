@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "core"
     name: "Configuration"
-    weight: 5
+    weight: 2
     identifier: "core-configuration"
 ---
 
@@ -84,7 +84,7 @@ If more than one provider is declared. They will be used in order of declaration
 <dependency>
   <groupId>dev.voidframework</groupId>
   <artifactId>voidframework-remoteconf-etcd</artifactId>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
 </dependency>
 ```
 
@@ -128,7 +128,7 @@ voidframework {
 <dependency>
   <groupId>dev.voidframework</groupId>
   <artifactId>voidframework-remoteconf-http</artifactId>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
 </dependency>
 ```
 

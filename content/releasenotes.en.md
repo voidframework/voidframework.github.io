@@ -4,6 +4,42 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.5.0
+{{< fontawesome name="calendar" >}}  *2023-01-02*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>CUID validator</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Internationalization for JavaScript</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Conditional feature</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Http Result methods now accept charset</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Rename bindable annotation from <code>@BindClass</code> to <code>@Bindable</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Clean thread data (Transactional)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.4.0
 {{< fontawesome name="calendar" >}}  *2022-12-05*
 {{< htmltable table_class="table table-borderless" >}}

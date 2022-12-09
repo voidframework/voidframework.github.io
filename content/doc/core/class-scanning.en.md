@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "core"
     name: "Class scanning"
-    weight: 2
+    weight: 3
     identifier: "class-scanning"
 ---
 
@@ -22,7 +22,7 @@ The core of the Void Framework is based on the scanning of different paths to di
 {{< newline >}}
 #### Guice module
 
-Guice modules that extend the abstract class `AbstractModule` are automatically detected and loaded when the application starts.
+Guice modules that extend the abstract class `AbstractModule` are automatically detected and loaded when the application starts. Unless the module is explicitly disabled by the `voidframework.core.disabledModules` configuration.
 
 {{< alert "info" >}}
 If you want to manage a priority on Guices modules, you can implement the <code>OrderedModule</code> interface.
@@ -39,7 +39,7 @@ Other class-level specialized annotations can also be considered as identifying 
 {{< table table_class="table table-striped" >}}
 | Annotation    | Description                                         |
 |---------------|-----------------------------------------------------|
-| `@BindClass`  | Indicates that an annotated class is a "Bindable"   |
+| `@Bindable`   |                                                     |
 | `@Controller` | Indicates that an annotated class is a "Controller" |
 | `@Repository` | Indicates that an annotated class is a "Repository" |
 | `@Service`    | Indicates that an annotated class is a "Service"    |

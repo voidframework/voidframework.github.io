@@ -50,3 +50,10 @@ Sometimes important changes will be introduced that will break the backwards com
 #### 1.4.0
 
 - Method `Router::addRoute` has changed. The `routeUrl` parameter is now of type `RouteURL`. You can use `RouteURL::of` to migrate to the new format
+
+
+
+{{< newline >}}
+#### 1.5.0
+
+- Annotation `@BindClass` has been renamed to `@Bindable`

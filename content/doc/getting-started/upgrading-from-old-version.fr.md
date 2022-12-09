@@ -48,3 +48,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 #### 1.4.0
 
 - La définition de la méthode `Router::addRoute` à changée. Le paramètre `routeUrl` est maintenant du type `RouteURL`. Vous pouvez utiliser la méthode `RouteURL::of` pour migrer vers le nouveau format 
+
+
+
+{{< newline >}}
+#### 1.5.0
+
+- L'annotation `@BindClass` a été renommée `@Bindable`
