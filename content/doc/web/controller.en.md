@@ -99,6 +99,27 @@ The annotation accepts the following parameter:
 This annotation allows you to retrieve the contents of the request (i.e. from a POST query) as a Java object. If something goes wrong, the extracted value will be `null`.
 
 
+{{< newline >}}
+**Example**
+
+```java
+@Singleton
+@WebController
+public class ExampleController {
+
+    @RequestRoute(route = "/")
+    public Result retrieveArrayFromQueryString(@RequestVariable("year") final int[] yearArray) {
+        return Result.ok(Yaml.toString(yearArray));
+    }
+
+    @RequestRoute(method = HttpMethod.POST, route = "/")
+    public Result retrieveListFromBody(@RequestBody("year") final List<Integer> yearList) {
+        return Result.ok(Yaml.toString(yearList));
+    }
+}
+```
+
+
 
 {{< newline >}}
 #### Parameter types
@@ -119,6 +140,7 @@ It is sure that you will have to retrieve the parameters with their respective t
 * UUID
 
 
+
 {{< newline >}}
 #### Handle custom types
 
@@ -127,21 +149,56 @@ To handle a new type, you simply have to implement a new converter. For more inf
 
 
 {{< newline >}}
-**Example**
+#### Static assets & webjars
+
+The abstract class `AbstractStaticAssetsController` provides the methods needed to serve static files and webjars. It provides the reverse routing names `static_file` and `static_webjar`. Static files default folder can be changed via the `voidframework.web.baseAssetResourcesDirectory` configuration key.
+
 
 ```java
 @Singleton
 @WebController
-public class ExampleController {
+public class StaticAssetsController extends AbstractStaticAssetsController {
 
-    @RequestRoute(route = "/")
-    public Result retrieveArrayFromQueryString(@RequestVariable("year") final int[] yearArray) {
-        return Result.ok(Yaml.toString(yearArray));
-    }
-
-     @RequestRoute(method = HttpMethod.POST, route = "/")
-    public Result retrieveListFromBody(@RequestBody("year") final List<Integer> yearList) {
-        return Result.ok(Yaml.toString(yearList));
+    @Inject
+    public StaticAssetsController(final Config configuration) {
+        super(configuration);
     }
 }
+```
+
+```html
+<link rel="stylesheet" href="${urlfor('static_file', 'css/application.css')}">
+```
+
+
+{{< newline >}}
+#### JavaScript internationalization (i18n)
+
+If you need to handle client-side translations via JavaScript, the abstract class `AbstractJavaScriptInternationalizationController` provides an endpoint to retrieve a helper that you can use directly on the client side. It provides the reverse routing name `js_i18n`.
+
+
+```java
+@Singleton
+@WebController
+public final class JavaScriptInternationalizationController extends AbstractJavaScriptInternationalizationController {
+
+    @Inject
+    public JavaScriptInternationalizationController(final Internationalization internationalization) {
+
+        super(internationalization);
+
+        // Optional: only retrieve matching translations
+        this.filterKeyPatternList.add("footer.*");
+    }
+}
+```
+
+```html
+<script src="${urlfor('js_i18n', 'fr')}"></script>
+
+<script>
+i18n.getMessage('msg.key');
+i18n.getMessage('msg.key', 'var');
+i18n.getMessage('msg.key', 'var1', 'var2', /*...*/'varn');
+</script>
 ```
