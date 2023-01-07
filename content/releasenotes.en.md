@@ -4,6 +4,18 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.5.1
+{{< fontawesome name="calendar" >}}  *2023-01-07*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>JavaScript i18n reverse routing name (<code>js_i18n</code>)</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.5.0
 {{< fontawesome name="calendar" >}}  *2023-01-02*
 {{< htmltable table_class="table table-borderless" >}}
