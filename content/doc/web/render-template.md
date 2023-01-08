@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "Render template"
-    weight: 6
+    weight: 7
     identifier: "render-template"
 ---
 

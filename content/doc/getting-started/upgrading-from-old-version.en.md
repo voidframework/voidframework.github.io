@@ -15,6 +15,12 @@ Sometimes important changes will be introduced that will break the backwards com
 
 
 {{< newline >}}
+#### 1.0.0
+
+*Initial release*
+
+
+{{< newline >}}
 #### 1.1.0
 
 - `ApplicationLauncher` has been renamed to `VoidApplication`
@@ -57,3 +63,10 @@ Sometimes important changes will be introduced that will break the backwards com
 #### 1.5.0
 
 - Annotation `@BindClass` has been renamed to `@Bindable`
+
+
+
+{{< newline >}}
+#### 1.6.0
+
+- Configuration keys `voidframework.web.server.listenHost` and `voidframework.web.server.listenPort` have been renamed to `voidframework.web.server.http.listenHost` and `voidframework.web.server.http.listenPort`

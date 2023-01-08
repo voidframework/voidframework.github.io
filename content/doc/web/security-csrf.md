@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "CSRF"
-    weight: 4
+    weight: 5
     identifier: "security-csrf"
 ---
 

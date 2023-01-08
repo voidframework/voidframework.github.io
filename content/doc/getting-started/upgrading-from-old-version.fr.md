@@ -45,6 +45,13 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 
 
 {{< newline >}}
+#### 1.0.0
+
+*Version initiale*
+
+
+
+{{< newline >}}
 #### 1.4.0
 
 - La définition de la méthode `Router::addRoute` à changée. Le paramètre `routeUrl` est maintenant du type `RouteURL`. Vous pouvez utiliser la méthode `RouteURL::of` pour migrer vers le nouveau format 
@@ -55,3 +62,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 #### 1.5.0
 
 - L'annotation `@BindClass` a été renommée `@Bindable`
+
+
+
+{{< newline >}}
+#### 1.6.0
+
+- Les clefs de configuration `voidframework.web.server.listenHost` et `voidframework.web.server.listenPort` ont été respectivement renommées en `voidframework.web.server.http.listenHost` et `voidframework.web.server.http.listenPort`

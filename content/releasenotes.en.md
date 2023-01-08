@@ -4,6 +4,43 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.6.0
+{{< fontawesome name="calendar" >}}  *2023-02-11*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Web module can now respond to requests securely via HTTPS</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td><code>NotInstance</code> validation constraint</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Utility class <code>DurationUtils</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Graceful stop timeout is now a duration (with time unit)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Commercial at "@" constant now available in <code>CharConstants</code> and <code>StringConstants</code> classes</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Annotation <code>RequestVariable</code> can now use fallback value</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.5.1
 {{< fontawesome name="calendar" >}}  *2023-01-07*
 {{< htmltable table_class="table table-borderless" >}}

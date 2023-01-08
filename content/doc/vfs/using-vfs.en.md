@@ -1,6 +1,6 @@
 ---
 title: "Using Virtual File Storage"
-slug: "introduction"
+slug: "using-vfs"
 draft: false
 menu:
   sidebar:
@@ -23,7 +23,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-vfs</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 {{< newline >}}
 #### Configuration
 
-Different `VirtualFileStorage` implementation must be configured in `voidframework.vfs` namespace. The following configuration key can be used.
+Different `VirtualFileStorage` implementations must be configured in `voidframework.vfs` namespace. The following configuration keys can be used.
 
 * `voidframework.vfs.<name>.className` the class name of the VFS implementation to use.
 * `voidframework.vfs.<name>.default` indicate if the implementation is used by default and can be Guice injected without `@Named` annotation.
@@ -84,7 +84,7 @@ public class UploadController {
 
     @Inject
     public UploadController(final VirtualFileStorage vfs) {
-
+        
         this.vfs = vfs;
     }
 

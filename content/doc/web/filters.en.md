@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "Filters"
-    weight: 3
+    weight: 4
     identifier: "filters"
 ---
 

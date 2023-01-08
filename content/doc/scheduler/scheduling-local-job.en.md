@@ -21,15 +21,11 @@ To define a job, simply use the `@Scheduled` annotation on one or more methods o
 
 The `@Scheduled` annotation accepts the following parameters:
 
-* `fixedDelay` defines the time in milliseconds between the end of the last execution and the next execution. The default value is `0` (disabled).
-
-* `fixedRate` defines the time in milliseconds between each execution. The default value is `0` (disabled).
- 
-* `initialDelay` defines the time in milliseconds to wait before the first execution of "fixedDelay" or "fixedRate". The default value is `0` (disabled).
-
-* `cron` defines a CRON-like expression. The default value is empty (disabled).
-
-* `cronZone` defines the time zone for which the CRON expression will be resolved. The default value is `UTC`.
+* `fixedDelay` the time in milliseconds between the end of the last execution and the next execution. The default value is `0` (disabled).
+* `fixedRate` the time in milliseconds between each execution. The default value is `0` (disabled).
+* `initialDelay` the time in milliseconds to wait before the first execution of "fixedDelay" or "fixedRate". The default value is `0` (disabled).
+* `cron` a CRON-like expression. The default value is empty (disabled).
+* `cronZone` the time zone for which the CRON expression will be resolved. The default value is `UTC`.
 
 
 

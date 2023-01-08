@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "Security headers"
-    weight: 5
+    weight: 6
     identifier: "security-headers"
 ---
 

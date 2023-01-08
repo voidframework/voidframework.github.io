@@ -35,7 +35,7 @@ Indicates that the cache must be evicted.
 
 The annotation accepts the following parameters:
 
-* `key` defines the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
+* `key` the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
 
 * `evictOn` allows you to provide the exception types that must cause a cache eviction. If classes are specified, the cache will only be evicted if the specified exceptions are thrown. The default value is `{}`.
 
@@ -49,7 +49,7 @@ Indicates that the result of the method will be cached and reused in future call
 
 The annotation accepts the following parameters:
 
-* `key` defines the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
+* `key` the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
 
 * `timeToLive` allows you to provide a configuration key to retrieve the maximum time in milliseconds to wait before giving up and continuing to stop the application. If no key is specified, the default value `-1` (no expiration) will be used.
  

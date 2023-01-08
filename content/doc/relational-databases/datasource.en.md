@@ -28,7 +28,7 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-c3p0</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-hikaricp</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
 </dependency>
 ```
 
@@ -51,7 +51,7 @@ The following configuration keys can be used in the configuration file of your a
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.url` the JDBC format URL to be used to reach the database.
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.username` the username to be provided durint the authentication step.
 * {{< badge type="primary" name="required" >}} `voidframework.datasource.default.password` the password to be provided durint the authentication step.
-* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="C3P0 only" >}} `voidframework.datasource.default.statementCacheNumDeferredCloseThreads` defines the number of threads to track when Connections are in use, and only destroy Statements when their parent Connections are not otherwise in use.
+* {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="C3P0 only" >}} `voidframework.datasource.default.statementCacheNumDeferredCloseThreads` the number of threads to track when Connections are in use, and only destroy Statements when their parent Connections are not otherwise in use.
 * {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.cachePrepStmts` enable or disable the prepared statements cache.
 * {{< badge type="secondary" name="optional" >}} `voidframework.datasource.default.prepStmtCacheSize` the number of prepared statements cache to keep in the cache.
 * {{< badge type="secondary" name="optional" >}} {{< badge type="success" name="HikariCP only" >}} `voidframework.datasource.default.prepStmtCacheSqlLimit` the size of the largest SQL query for which the parsing result will be keep in the cache.

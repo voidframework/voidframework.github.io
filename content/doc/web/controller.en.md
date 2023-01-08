@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "web"
     name: "Controller"
-    weight: 1
+    weight: 2
     identifier: "controller"
 ---
 
@@ -55,7 +55,7 @@ This annotation is based on the `@Controller` annotation. It simply allows the c
 
 The annotation accepts the following parameter:
 
-* `prefixRoute` defines a prefix to be used on all endpoints in the class. By default, the value is empty.
+* `prefixRoute` a prefix to use on all endpoints in the class. By default, the value is empty.
 
 ##### @RequestRoute
 
@@ -63,9 +63,9 @@ This annotation allows you to configure an entry point that will process an inco
 
 The annotation accepts the following parameters:
 
-* `method` defines the HTTP method. The default value is `HttpMethod.GET`.
-* `route` defines a route. Regular expression with named capturing group can be used. The default value is `/`.
-* `name` defines an alias name who can be used with the reverse routing. By default, the value is empty.
+* `method` the HTTP method. The default value is `HttpMethod.GET`.
+* `route` the route. Regular expression with named capturing group can be used. The default value is `/`.
+* `name` an alias name who can be used with the reverse routing. By default, the value is empty.
 
 
 
@@ -82,7 +82,7 @@ This annotation allows you to extract parameters named in the URL path.
 
 The annotation accepts the following parameter:
 
-* `value` defines the name of the parameter (correlated with the regexp used in the route definition) to extract.
+* `value` the name of the parameter (correlated with the regexp used in the route definition) to extract.
 
 
 #### @RequestVariable
@@ -91,7 +91,8 @@ This annotation allows you to extract query string value (simple or array) from 
 
 The annotation accepts the following parameter:
 
-* `value` defines the name of the query string value to extract.
+* `value` the name of the query string value to extract.
+* `fallback` the value to use as fallback.
 
 
 #### @RequestBody
