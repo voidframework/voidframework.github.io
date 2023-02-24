@@ -4,6 +4,18 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.6.1
+{{< fontawesome name="calendar" >}}  *2023-02-24*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>HTTP webserver graceful shutdown not honored</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.6.0
 {{< fontawesome name="calendar" >}}  *2023-02-11*
 {{< htmltable table_class="table table-borderless" >}}
@@ -35,7 +47,6 @@ slug: "releasenotes"
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Updated version of all dependencies</td>
 </tr>
-
 {{< /htmltable >}}
 
 
