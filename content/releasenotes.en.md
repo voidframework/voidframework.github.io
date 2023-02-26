@@ -4,6 +4,54 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.7.0
+{{< fontawesome name="calendar" >}}  *2023-XX-XX*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade Undertow version to 2.3.5 (<a href="https://github.com/advisories/GHSA-pfcc-3g6r-8rg8">CVE-2022-4492</a>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Conditional feature <code>RunInDevModeConditionalFeature</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Sendmail module</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Sendmail module implementation <code>Apache Commons Email</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>@CachePut</code> annotation</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Javadoc</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>HttpClient is now used instead of raw URL connection (Remote Configuration)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Result: method <code>badRequest(final String content, final String contentType)</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Transactional annotation multiple calls</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.6.1
 {{< fontawesome name="calendar" >}}  *2023-02-24*
 {{< htmltable table_class="table table-borderless" >}}

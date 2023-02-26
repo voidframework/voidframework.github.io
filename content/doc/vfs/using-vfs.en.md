@@ -23,7 +23,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-vfs</artifactId>
-    <version>1.6.1</version>
+    <version>1.7.0</version>
 </dependency>
 ```
 

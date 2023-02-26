@@ -28,6 +28,8 @@ The `reference.conf` files define the various configuration keys and default val
 | `voidframework-remoteconf-etcd` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-remoteconf-etcd/src/main/resources/reference.conf) |
 | `voidframework-remoteconf-http` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-remoteconf-http/src/main/resources/reference.conf) |
 | `voidframework-scheduler` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-scheduler/src/main/resources/reference.conf) |
+| `voidframework-sendmail` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-sendmail/src/main/resources/reference.conf) |
+| `voidframework-sendmail-commonsemail` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-sendmail-commonsemail/src/main/resources/reference.conf) |
 | `voidframework-template-freemarker` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-template-freemarker/src/main/resources/reference.conf) |
 | `voidframework-validation` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-validation/src/main/resources/reference.conf) |
 | `voidframework-vfs` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-vfs/src/main/resources/reference.conf) |
