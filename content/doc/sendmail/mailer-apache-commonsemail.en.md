@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "sendmail"
     name: "Mailer : Apache Commons Email"
-    weight: 2
+    weight: 3
     identifier: "mailer-apache-commons-email"
 ---
 

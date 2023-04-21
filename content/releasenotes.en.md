@@ -4,6 +4,34 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.8.0
+{{< fontawesome name="calendar" >}}  *2023-05-18*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Proxyable interface</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>H2 web console</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Bind automatically interface with single implementation</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Updated version of all dependencies</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Guice module implementing interface not recognized</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.7.0
 {{< fontawesome name="calendar" >}}  *2023-04-12*
 {{< htmltable table_class="table table-borderless" >}}

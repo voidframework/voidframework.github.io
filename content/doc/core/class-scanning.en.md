@@ -13,9 +13,10 @@ menu:
 The core of the Void Framework is based on the scanning of different paths to discover elements to load.
 3 types of elements are recognised during the scan:
 
-* Classes extending `AbstractModule` (Guice)
-* Classes annotated with `Bindable` annotation
+* Classes implementing `com.google.inject.Module` or extending `com.google.inject.AbstractModule`
+* Classes annotated with `Bindable` familly annotation
 * Classes implementing defined interface
+* Interfaces annotated with `Proxyable` annotation
 
 
 
@@ -51,6 +52,14 @@ Other class-level specialized annotations can also be considered as identifying 
 #### Defined interface
 
 The configuration key `voidframework.core.bindExtraInterfaces` is used to define a set of interfaces for which to bind the found implementations. For example, converters are automatically detected in this way via the `TypeConverter` interface.
+
+
+
+{{< newline >}}
+#### Proxyable interface
+
+The `@Proxyable` annotation indicates that the implementation of the annotated interface is a proxy that will be configured by one of the modules that will be loaded when the application starts. The module can retrieve the interface(s) it is interested in via the `ScannedClassesToLoad` variable provided in the module constructor.
+
 
 
 {{< newline >}}

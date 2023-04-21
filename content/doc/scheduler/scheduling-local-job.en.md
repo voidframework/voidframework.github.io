@@ -15,6 +15,21 @@ If your application have to schedule a job in a scheduled way (ie: every 5 secon
 
 
 {{< newline >}}
+#### Installation
+
+To enable this module, just add following lines to the `pom.xml` file of your project.
+
+```xml
+<dependency>
+    <groupId>dev.voidframework</groupId>
+    <artifactId>voidframework-scheduler</artifactId>
+    <version>1.7.0</version>
+</dependency>
+```
+
+
+
+{{< newline >}}
 #### Define a Job
 
 To define a job, simply use the `@Scheduled` annotation on one or more methods of a bindable class. As a reminder, a class is said to be bindable when it is annotated with, at least, the `@Bindable` annotation.
