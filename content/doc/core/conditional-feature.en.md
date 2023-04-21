@@ -50,3 +50,51 @@ The annotation accepts the following parameter:
 public final class SampleController {
 }
 ```
+
+
+
+{{< newline >}}
+#### @RunInDevModeConditionalFeature
+
+The `@RunInDevModeConditionalFeature` annotation allows a feature to be enabled only if the dev mode is set to `true`.
+
+
+
+**Exemple**
+```java
+@WebController
+@RunInDev
+public final class SampleController {
+}
+```
+
+
+
+{{< newline >}}
+#### Creating your own condition
+
+To create your own condition, simply implement the `Condition` interface and use this new implementation with the `@ConditionalFeature` annotation. You can also create your own annotation if you wish.
+
+
+**Exemple**
+```java
+public class RunInDevModeCondition implements Condition {
+
+    @Override
+    public boolean isEnabled(final Config configuration,
+                             final Class<?> annotatedClassType,
+                             final AnnotationMetadata annotationMetadata) {
+
+        return configuration.getBoolean("voidframework.core.runInDevMode");
+    }
+}
+```
+
+```java
+@Documented
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@ConditionalFeature(RunInDevModeCondition.class)
+public @interface RunInDevModeConditionalFeature {
+}
+```
