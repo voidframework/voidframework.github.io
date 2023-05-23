@@ -45,5 +45,5 @@ The following configuration keys can be used in the configuration file of your a
 Once your application has started, you can access the H2 web console by going to `http://127.0.0.1:9002`.
 
 {{< alert "warning" >}}
-Note that H2 web console will be started only if the configuration is run in development mode (<code>voidframework.core.runInDevMode = true</code>).
+Note that H2 web console will be started only if the application is run in development mode (<code>voidframework.core.runInDevMode = true</code>).
 {{< /alert >}}
