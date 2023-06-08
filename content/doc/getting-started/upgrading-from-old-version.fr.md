@@ -69,3 +69,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 #### 1.6.0
 
 - Les clefs de configuration `voidframework.web.server.listenHost` et `voidframework.web.server.listenPort` ont été respectivement renommées en `voidframework.web.server.http.listenHost` et `voidframework.web.server.http.listenPort`
+
+
+
+{{< newline >}}
+#### 1.8.0
+
+- Guice 7.0 supporte seulement annotations comprises dans les packages `jakarta.inject`, `jakarta.servlet` et `jakarta.persistence`. Plus d'information : https://github.com/google/guice/wiki/Guice700
