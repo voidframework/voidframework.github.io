@@ -11,7 +11,7 @@ menu:
 ---
 
 The core of the Void Framework is based on the scanning of different paths to discover elements to load.
-3 types of elements are recognised during the scan:
+4 types of elements are recognised during the scan:
 
 * Classes implementing `com.google.inject.Module` or extending `com.google.inject.AbstractModule`
 * Classes annotated with `Bindable` familly annotation
