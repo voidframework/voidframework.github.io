@@ -4,6 +4,18 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.8.1
+{{< fontawesome name="calendar" >}}  *2023-16-16*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Add exception AppLauncherException.ModuleConstructorNotFound</td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.8.0
 {{< fontawesome name="calendar" >}}  *2023-05-18*
 {{< htmltable table_class="table table-borderless" >}}
