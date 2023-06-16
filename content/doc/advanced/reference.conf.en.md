@@ -6,7 +6,7 @@ menu:
   sidebar:
     parent: "advanced"
     name: "reference.conf"
-    weight: 2
+    weight: 3
     identifier: "web-reference.conf"
 ---
 

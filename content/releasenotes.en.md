@@ -4,12 +4,44 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.9.0
+{{< fontawesome name="calendar" >}}  *2023-XX-XX*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>AspectJ</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>REST client</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Bucket4J (rate-limiting)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>ConfigurationUtils</code> class</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>New constant value: <code>CharConstants.TAB</code> and <code>StringConstants.TAB</code></td>
+</tr>
+{{< /htmltable >}}
+
+
+
+{{< newline >}}
 ### 1.8.1
 {{< fontawesome name="calendar" >}}  *2023-16-16*
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
-  <td>Add exception AppLauncherException.ModuleConstructorNotFound</td>
+  <td>Add exception <code>AppLauncherException.ModuleConstructorNotFound</code></td>
 </tr>
 {{< /htmltable >}}
 

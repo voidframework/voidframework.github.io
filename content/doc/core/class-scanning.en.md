@@ -11,11 +11,12 @@ menu:
 ---
 
 The core of the Void Framework is based on the scanning of different paths to discover elements to load.
-4 types of elements are recognised during the scan:
+5 types of elements are recognised during the scan:
 
 * Classes implementing `com.google.inject.Module` or extending `com.google.inject.AbstractModule`
 * Classes annotated with `Bindable` familly annotation
 * Classes implementing defined interface
+* Classes annotated with `Aspect` annotation
 * Interfaces annotated with `Proxyable` annotation
 
 
@@ -52,6 +53,13 @@ Other class-level specialized annotations can also be considered as identifying 
 #### Defined interface
 
 The configuration key `voidframework.core.bindExtraInterfaces` is used to define a set of interfaces for which to bind the found implementations. For example, converters are automatically detected in this way via the `TypeConverter` interface.
+
+
+
+{{< newline >}}
+#### Aspect Oriented Programming
+
+Aspect Oriented Programming (AOP) can be used with Void Framework, see chapter "*Advanced / Aspect Oriented Programming*" section for more information.
 
 
 

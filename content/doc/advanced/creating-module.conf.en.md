@@ -18,15 +18,14 @@ To meet all needs, the Void Framework provides the ability to obtain additional 
 * `Config` the current configuration of the application
 * `ScannedClassesToLoad` the classes that were scanned when the application started
 
-In the event that one module needs to be loaded before another, you can use the `OrderedModule` annotation.
+if a module needs to be loaded before another, you can use the `OrderedModule` interface.
 
 
 {{< newline >}}
 #### Example
 
 ```java
-@OrderedModule(priority = 50)
-public final class MyCustomModule extends AbstractModule {
+public final class MyCustomModule extends AbstractModule implements OrderedModule {
 
     private final Config configuration;
     private final ScannedClassesToLoad scannedClassesToLoad;
@@ -42,6 +41,12 @@ public final class MyCustomModule extends AbstractModule {
     protected void configure() {
     
         // Place your module code here
+    }
+
+    @Override
+    public int priority() {
+
+        return 50;
     }
 }
 ```
