@@ -16,6 +16,7 @@ The `reference.conf` files define the various configuration keys and default val
 {{< table table_class="table table-striped" >}}
 |                      |                 |
 |----------------------|-----------------|
+| `voidframework-bucket4j` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-bucket4j/src/main/resources/reference.conf) |
 | `voidframework-cache` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-cache/src/main/resources/reference.conf) |
 | `voidframework-core` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-core/src/main/resources/reference.conf) |
 | `voidframework-datasource-c3p0` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-datasource-c3p0/src/main/resources/reference.conf) |
@@ -27,6 +28,7 @@ The `reference.conf` files define the various configuration keys and default val
 | `voidframework-redis` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-redis/src/main/resources/reference.conf) |
 | `voidframework-remoteconf-etcd` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-remoteconf-etcd/src/main/resources/reference.conf) |
 | `voidframework-remoteconf-http` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-remoteconf-http/src/main/resources/reference.conf) |
+| `voidframework-restclient` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-restclient/src/main/resources/reference.conf) |
 | `voidframework-scheduler` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-scheduler/src/main/resources/reference.conf) |
 | `voidframework-sendmail` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-sendmail/src/main/resources/reference.conf) |
 | `voidframework-sendmail-commonsemail` | [reference.conf](https://github.com/voidframework/voidframework/blob/master/voidframework-sendmail-commonsemail/src/main/resources/reference.conf) |
