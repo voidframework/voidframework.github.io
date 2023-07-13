@@ -20,7 +20,7 @@ If your application needs to send a few emails, you can easily do so via the `vo
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-sendmail</artifactId>
-    <version>1.8.1</version>
+    <version>1.9.0</version>
 </dependency>
 ```
 

@@ -19,7 +19,7 @@ This implementation requires the `voidframework-redis` module to be properly con
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-cache-redis</artifactId>
-    <version>1.8.1</version>
+    <version>1.9.0</version>
 </dependency>
 ```
 
