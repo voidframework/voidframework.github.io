@@ -1,5 +1,5 @@
 ---
-title: "Hibernate"
+title: "jOOQ ORM"
 slug: "persistence-jooq"
 draft: false
 menu:
