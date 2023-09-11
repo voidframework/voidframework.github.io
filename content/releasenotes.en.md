@@ -4,6 +4,25 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.10.0
+{{< fontawesome name="calendar" >}}  *2023-XX-XX*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>REST Client authentication (API Key, Basic, Bearer)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>New constant values: <code>CharConstants.EXCLAMATION_MARK</code>, <code>CharConstants.PIPE</code>, <code>StringConstants.EXCLAMATION_MARK</code> and <code>StringConstants.PIPE</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.9.0
 {{< fontawesome name="calendar" >}}  *2023-07-13*
 {{< htmltable table_class="table table-borderless" >}}
