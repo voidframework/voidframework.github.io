@@ -30,7 +30,7 @@ AspectJ runtime (`aspectjrt`) is already provided by the module `voidframework-c
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjtools</artifactId>
-            <version>1.9.19</version> <!-- Min. version to handle Java 17 -->
+            <version>1.9.20.1</version> <!-- Min. version to handle Java 17 is 1.9.19 -->
         </dependency>
     </dependencies>
     
