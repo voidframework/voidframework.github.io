@@ -51,7 +51,7 @@ The annotation accepts the following parameters:
 
 * `key` the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
 
-* `timeToLive` allows you to provide a configuration key to retrieve the maximum time in milliseconds to wait before giving up and continuing to stop the application. If no key is specified, the default value `-1` (no expiration) will be used.
+* `timeToLive` the maximum time to live in milliseconds. The default value is `-1` (no expiration).
 
 
 {{< newline >}}
@@ -61,7 +61,7 @@ Indicates that the result of the method will be cached regardless value already 
 
 * `key` the cache key. It can contains dynamic information via the usage of `{class}`, `{method}` and `{n}` (with *n* the method argument position). The default value is `{class}.{name}`.
 
-* `timeToLive` allows you to provide a configuration key to retrieve the maximum time in milliseconds to wait before giving up and continuing to stop the application. If no key is specified, the default value `-1` (no expiration) will be used.
+* `timeToLive` the maximum time to live in milliseconds. The default value is `-1` (no expiration).
 
 
 {{< newline >}}
