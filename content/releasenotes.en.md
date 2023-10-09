@@ -4,6 +4,45 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.11.0
+{{< fontawesome name="calendar" >}}  *2023-xx-xx*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>KryoUtils</code> class</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add new method <code>ClassResolverUtils::isClassAvailable</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add new Kryo serializers</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>MockitoUtils</code> class (spy lambda)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td><code>AbstractCacheEngine</code> now using <code>KryoUtils</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Add <code>TypedMap</code> static "constructor" methods</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Redis ACL authentication (username/password)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.10.0
 {{< fontawesome name="calendar" >}}  *2023-09-11*
 {{< htmltable table_class="table table-borderless" >}}
