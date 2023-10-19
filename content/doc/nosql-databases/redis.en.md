@@ -36,6 +36,7 @@ The following configuration key can be used in the configuration file of your ap
 
 * `voidframework.redis.host` the Redis server host. Default value is `127.0.0.1`.
 * `voidframework.redis.port` the port on which the server is listening. Default value is `6379`.
+* `voidframework.redis.username` the authentication username (Redis 6 ACL). By default, this value is empty.
 * `voidframework.redis.password` the authentication password. By default, this value is empty.
 * `voidframework.redis.defaultDatabase` the database to use by default. Default value is `1`.
 * `voidframework.redis.connPool.connectionTimeout` the connection timeout in milliseconds. Default value is `2000 milliseconds`.

@@ -34,7 +34,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 The following configuration keys can be used in the configuration file of your application:
 
 * `voidframework.h2.webPort` the listen port of the H2 console. The default value is `9002`.
-* `voidframework.h2.webAdminPassword` the password to access preferences and tools of H2 console. The default value is `sa`.
+* `voidframework.h2.webAdminPassword` the password to access preferences and tools of H2 console. The default value is `null` (disabled).
 * `voidframework.h2.webAllowOthers` specifies if other computers are allowed to connect. The default value is `false`.
 
 
