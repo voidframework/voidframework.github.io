@@ -28,7 +28,7 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-c3p0</artifactId>
-    <version>1.10.0</version>
+    <version>1.11.0</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ Note that you can only use one implementation at a time.
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-datasource-hikaricp</artifactId>
-    <version>1.10.0</version>
+    <version>1.11.0</version>
 </dependency>
 ```
 
