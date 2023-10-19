@@ -5,7 +5,7 @@ slug: "releasenotes"
 ---
 
 ### 1.11.0
-{{< fontawesome name="calendar" >}}  *2023-xx-xx*
+{{< fontawesome name="calendar" >}}  *2023-20-19*
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
   <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
@@ -38,6 +38,14 @@ slug: "releasenotes"
 <tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Upgrade dependencies</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Application must shutdown on "start" lifecycle failure</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>H2 web console fail to start because password not encoded</td>
 </tr>
 {{< /htmltable >}}
 
