@@ -26,10 +26,22 @@ This module adds support for the `Transactional` annotation as well as setting u
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-persistence-hibernate</artifactId>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
 </dependency>
 ```
 
+
+{{< newline >}}
+#### Configuration
+
+The following configuration key can be used in the configuration file of your application.
+
+* `voidframework.persistence.modelsJarUrlPattern` Pattern to select Jar to scan to find models. For more information, see below the section "_Speed-up PersistenceEntityFactory initialization time_". Default value is `auto`.
+* `voidframework.datasource.default.dialect` the Redis server host. Default value is `null`.
+
+{{< alert "info" >}}
+The third segment named "default" represents the name of the data source. Any name can be used as long as it does not contain spaces or special characters.
+{{< /alert >}}
 
 
 {{< newline >}}

@@ -4,8 +4,23 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.11.1
+{{< fontawesome name="calendar" >}}  *2023-11-23*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Fix SQLDialect detection KO (jOOQ)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Fix can't override Hibernate dialect</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.11.0
-{{< fontawesome name="calendar" >}}  *2023-20-19*
+{{< fontawesome name="calendar" >}}  *2023-10-19*
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
   <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
