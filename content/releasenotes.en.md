@@ -5,7 +5,7 @@ slug: "releasenotes"
 ---
 
 ### 1.11.1
-{{< fontawesome name="calendar" >}}  *2023-11-23*
+{{< fontawesome name="calendar" >}}  *2023-12-05*
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
   <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
