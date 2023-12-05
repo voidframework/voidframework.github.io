@@ -8,6 +8,17 @@ slug: "releasenotes"
 {{< fontawesome name="calendar" >}}  *2023-11-23*
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade logback-classic version to 1.4.14 (<a href="https://github.com/advisories/GHSA-vmq6-5m68-f53m"> CVE-2023-6378</a>)</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
+### 1.11.1
+{{< fontawesome name="calendar" >}}  *2023-11-23*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
   <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
   <td>Fix SQLDialect detection KO (jOOQ)</td>
 </tr>
