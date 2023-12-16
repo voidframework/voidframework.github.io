@@ -77,3 +77,10 @@ Sometimes important changes will be introduced that will break the backwards com
 #### 1.8.0
 
 - Guice 7.0 only supports the `jakarta.inject`, `jakarta.servlet` and `jakarta.persistence` namespaces. Read more at https://github.com/google/guice/wiki/Guice700
+
+
+
+{{< newline >}}
+#### 1.12.0
+
+- Constants `PARENTHESIS_OPEN` and `PARENTHESIS_CLOSE` are no longer inverted. If you use these two constants, take care to adapt their use
