@@ -76,3 +76,10 @@ Parfois, des changements important qui casseront la retro-compatibilité avec le
 #### 1.8.0
 
 - Guice 7.0 supporte seulement annotations comprises dans les packages `jakarta.inject`, `jakarta.servlet` et `jakarta.persistence`. Plus d'information : https://github.com/google/guice/wiki/Guice700
+
+
+
+{{< newline >}}
+#### 1.12.0
+
+- Les constantes `PARENTHESIS_OPEN` et `PARENTHESIS_CLOSE` ne sont plus inversées. Si vous utilisez ces deux constantes, veillez à adapter leur utilisation

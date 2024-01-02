@@ -4,6 +4,29 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.12.0
+{{< fontawesome name="calendar" >}}  *2024-01-02*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Add <code>ClassMethodUtils</code> class</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Constants <code>PARENTHESIS_OPEN</code> and <code>PARENTHESIS_CLOSE</code> are no longer inverted</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Error page (dev mode): display filename & partial content</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.11.1
 {{< fontawesome name="calendar" >}}  *2023-12-05*
 {{< htmltable table_class="table table-borderless" >}}
@@ -50,6 +73,14 @@ slug: "releasenotes"
   <td>Add <code>MockitoUtils</code> class (spy lambda)</td>
 </tr>
 <tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Application must shutdown on "start" lifecycle failure</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>H2 web console fail to start because password not encoded</td>
+</tr>
+<tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td><code>AbstractCacheEngine</code> now using <code>KryoUtils</code></td>
 </tr>
@@ -64,14 +95,6 @@ slug: "releasenotes"
 <tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Upgrade dependencies</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Application must shutdown on "start" lifecycle failure</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>H2 web console fail to start because password not encoded</td>
 </tr>
 {{< /htmltable >}}
 
@@ -152,16 +175,16 @@ slug: "releasenotes"
   <td>H2 web console</td>
 </tr>
 <tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Guice module implementing interface not recognized</td>
+</tr>
+<tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Bind automatically interface with single implementation</td>
 </tr>
 <tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Updated version of all dependencies</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Guice module implementing interface not recognized</td>
 </tr>
 {{< /htmltable >}}
 
@@ -192,6 +215,10 @@ slug: "releasenotes"
   <td>Add <code>@CachePut</code> annotation</td>
 </tr>
 <tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Transactional annotation multiple calls</td>
+</tr>
+<tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Javadoc</td>
 </tr>
@@ -206,10 +233,6 @@ slug: "releasenotes"
 <tr>
   <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
   <td>Updated version of all dependencies</td>
-</tr>
-<tr>
-  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
-  <td>Transactional annotation multiple calls</td>
 </tr>
 {{< /htmltable >}}
 
