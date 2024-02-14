@@ -32,7 +32,7 @@ slug: "releasenotes"
 {{< htmltable table_class="table table-borderless" >}}
 <tr>
   <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
-  <td>Upgrade logback-classic version to 1.4.14 (<a href="https://github.com/advisories/GHSA-vmq6-5m68-f53m"> CVE-2023-6378</a>)</td>
+  <td>Upgrade logback-classic version to 1.4.14 (<a href="https://github.com/advisories/GHSA-vmq6-5m68-f53m">CVE-2023-6378</a>)</td>
 </tr>
 {{< /htmltable >}}
 
