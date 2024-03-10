@@ -23,7 +23,7 @@ To enable this module, just add following lines to the `pom.xml` file of your pr
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-restclient</artifactId>
-    <version>1.12.0</version>
+    <version>1.13.0</version>
 </dependency>
 ```
 

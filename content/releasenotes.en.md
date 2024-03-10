@@ -4,6 +4,21 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.13.0
+{{< fontawesome name="calendar" >}}  *2024-03-10*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="success" name="New" >}}</td>
+  <td>Simplified URL variable</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.12.0
 {{< fontawesome name="calendar" >}}  *2024-01-02*
 {{< htmltable table_class="table table-borderless" >}}

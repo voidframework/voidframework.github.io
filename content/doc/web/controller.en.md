@@ -26,7 +26,7 @@ public class AccountController {
         return Result.ok("Hello World");
     }
 
-    @RequestRoute(method = HttpMethod.POST, route = "/(?<accountId>[a-f0-9]+)")
+    @RequestRoute(method = HttpMethod.POST, route = "/{accountId}")
     public Result updateAccount(@RequestPath("accountId") final String accountId,
                                 @RequestBody final ProfileForm form,
                                 final Context context) {
@@ -64,7 +64,7 @@ This annotation allows you to configure an entry point that will process an inco
 The annotation accepts the following parameters:
 
 * `method` the HTTP method. The default value is `HttpMethod.GET`.
-* `route` the route. Regular expression with named capturing group can be used. The default value is `/`.
+* `route` the route. Regular expression with named capturing group or simplified variable (ie: `{accountId}`) can be used. The default value is `/`.
 * `name` an alias name who can be used with the reverse routing. By default, the value is empty.
 
 
