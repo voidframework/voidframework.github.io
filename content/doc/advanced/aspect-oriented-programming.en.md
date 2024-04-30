@@ -23,14 +23,14 @@ AspectJ runtime (`aspectjrt`) is already provided by the module `voidframework-c
     <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>aspectj-maven-plugin</artifactId>
-    <version>1.14.0</version>
+    <version>1.15.0</version>
     <inherited>true</inherited>
     
     <dependencies>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjtools</artifactId>
-            <version>1.9.20.1</version> <!-- Min. version to handle Java 17 is 1.9.19 -->
+            <version>1.9.22</version> <!-- Match version provided by Void Framework  -->
         </dependency>
     </dependencies>
     

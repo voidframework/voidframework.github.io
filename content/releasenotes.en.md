@@ -4,6 +4,25 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.14.0
+{{< fontawesome name="calendar" >}}  *2024-05-01*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade guava version to 32.0.1 (<a href="https://github.com/advisories/GHSA-7g45-4rm6-3mm3">CVE-2023-2976</a> & <a href="https://github.com/advisories/GHSA-5mg8-w23w-74h3">CVE-2020-8908</a>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="danger" name="Fixed" >}}</td>
+  <td>Force close <code>BlockingHttpExchange</code></td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.13.0
 {{< fontawesome name="calendar" >}}  *2024-03-10*
 {{< htmltable table_class="table table-borderless" >}}
