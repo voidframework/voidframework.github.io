@@ -20,7 +20,7 @@ This implementation of the mailer uses the `Apache Commons Email` library. It al
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-sendmail-commonsemail</artifactId>
-    <version>1.14.0</version>
+    <version>1.15.0</version>
 </dependency>
 ```
 

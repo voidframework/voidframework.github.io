@@ -4,6 +4,21 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.15.0
+{{< fontawesome name="calendar" >}}  *2024-06-27*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade undertow version to 2.3.14.Final (<a href="https://github.com/advisories/GHSA-9442-gm4v-r222">CVE-2024-6162</a>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.14.0
 {{< fontawesome name="calendar" >}}  *2024-05-01*
 {{< htmltable table_class="table table-borderless" >}}
