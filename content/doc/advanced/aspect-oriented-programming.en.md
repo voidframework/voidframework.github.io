@@ -23,7 +23,7 @@ AspectJ runtime (`aspectjrt`) is already provided by the module `voidframework-c
     <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>aspectj-maven-plugin</artifactId>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
     <inherited>true</inherited>
     
     <dependencies>

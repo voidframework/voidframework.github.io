@@ -4,6 +4,25 @@ title: "Release notes"
 slug: "releasenotes"
 ---
 
+### 1.16.0
+{{< fontawesome name="calendar" >}}  *2024-09-17*
+{{< htmltable table_class="table table-borderless" >}}
+<tr>
+  <td class="text-end" width=90px>{{< badge type="warning" name="Security" >}}</td>
+  <td>Upgrade undertow version to 2.3.17.Final (<a href="https://github.com/advisories/GHSA-9623-mqmm-5rcf">CVE-2024-7885</a>)</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Replace deprecated Bucket4J usage with new API</td>
+</tr>
+<tr>
+  <td class="text-end" width=90px>{{< badge type="primary" name="Improved" >}}</td>
+  <td>Upgrade dependencies</td>
+</tr>
+{{< /htmltable >}}
+
+
+{{< newline >}}
 ### 1.15.0
 {{< fontawesome name="calendar" >}}  *2024-06-27*
 {{< htmltable table_class="table table-borderless" >}}

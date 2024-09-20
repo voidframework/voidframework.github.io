@@ -24,12 +24,12 @@ In this example, we will also use the `web` feature, so the `voidframework-web` 
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-core</artifactId>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
 </dependency>
 <dependency>
     <groupId>dev.voidframework</groupId>
     <artifactId>voidframework-web</artifactId>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
 </dependency>
 ```
 
